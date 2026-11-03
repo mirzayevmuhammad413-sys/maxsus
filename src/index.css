@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-red: #9e5b6d;
+  --deep-red: #5e3240;
+  --dark-crimson: #2a151f;
+  --vibrant-rose: #c97d93;
+  --soft-pink: #f4d4dc;
+  --gold-accent: #cbb28b;
+  --gold-light: #faf0e1;
+  --parchment-bg: #fcf9f5;
+  --parchment-border: #e3d3be;
+  --text-dark: #2c1b22;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', 'Great Vibes', cursive;
+  --font-calligraphy: 'Great Vibes', cursive;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #160c12;
+  color: #fff;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom soft romantic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140a10;
+}
+::-webkit-scrollbar-thumb {
+  background: #7a3a4c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8586c;
+}
+
+/* Selection color */
+::-selection {
+  background: #c97d93;
+  color: #ffffff;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.25s ease;
+}
