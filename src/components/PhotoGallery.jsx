@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import eyesImg from '../assets/eyes.jpg';
-import hairImg from '../assets/hair.jpg';
-import lipsImg from '../assets/lips.jpg';
-import neckImg from '../assets/neck.jpg';
-import loveVideo from '../video/love-video.mp4';
+import eyesImg from '../assets/img1.png';
+import hairImg from '../assets/img2.png';
+import lipsImg from '../assets/img3.png';
+import neckImg from '../assets/img4.png';
+import loveVideo from '../video/mmm.mp4';
 
 const photoItems = [
   {
