@@ -25,7 +25,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
       {!isOpen && (
         <div className="closed-envelope-section">
           <div className="envelope-invitation">
-            <span className="sparkle-tag">✨ A Gentle Note For Musharaf ✨</span>
+            <span className="sparkle-tag">✨ A Gentle Note For Soliha ✨</span>
             <h1 className="envelope-main-title">A Special Letter</h1>
             <p className="envelope-sub-text">
               A few sincere words of heartfelt appreciation and quiet respect...
@@ -76,7 +76,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
 
               {/* Front Label */}
               <div className="envelope-label">
-                <p className="label-to">To: <span>Musharaf 🌸</span></p>
+                <p className="label-to">To: <span>Soliha 🌸</span></p>
                 <p className="label-from">From: <span>Someone Who Truly Loves You 🕊️</span></p>
               </div>
             </div>
@@ -110,7 +110,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
                   <span className="crown-heart">✨</span>
                   <span>🌸</span>
                 </div>
-                <h2 className="letter-salutation">Dear Musharaf,</h2>
+                <h2 className="letter-salutation">Dear Soliha,</h2>
                 <div className="letter-date">
                   <span>With Warmth & Sincere Respect</span>
                 </div>
@@ -152,7 +152,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
                 </p>
 
                 <p className="letter-paragraph signature-closing">
-                  Wishing you endless peace, joy, and happiness in everything you do, Musharaf. 🌸
+                  Wishing you endless peace, joy, and happiness in everything you do, Soliha. 🌸
                 </p>
               </div>
 

@@ -52,7 +52,7 @@ const PhotoGallery = () => {
           <span>✨</span>
           <span>🕊️</span>
         </div>
-        <h3 className="gallery-title">Moments of Grace & Elegance, Musharaf</h3>
+        <h3 className="gallery-title">Moments of Grace & Elegance, Soliha</h3>
         <p className="gallery-subtitle">
           A quiet tribute to the kindness, beauty, and serene light you bring into the world
         </p>
