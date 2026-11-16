@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
-import eyesImg from '../assets/img1.png';
-import hairImg from '../assets/img2.png';
-import lipsImg from '../assets/img3.png';
-import neckImg from '../assets/img4.png';
+import eyesImg from '../assets/img1.jpg';
+import hairImg from '../assets/img2.jpg';
+import lipsImg from '../assets/img3.jpg';
+import neckImg from '../assets/img4.jpg';
 import loveVideo from '../video/mmm.mp4';
 
 const photoItems = [
   {
     id: 1,
-    title: "A Gentle Gaze ✨",
-    subtitle: "Depth, serenity, and quiet wisdom",
-    description: "Your gaze carries a rare tranquility and thoughtfulness. It reflects a calm, dignified spirit that brings peace and comfort to those around you.",
+    title: "Mehribon nigoh ✨",
+    subtitle: "Chuqurlik, osoyishtalik va sokin donolik",
+    description: "Nigohingizda noyob tinchlik va o‘ylanganlik bor. U sokin, vazmin ruhni aks ettirib, atrofingizdagilarga xotirjamlik va tinchlik baxsh etadi.",
     img: eyesImg,
-    badge: "Serene Calm",
+    badge: "Osoyishta xotirjamlik",
   },
   {
     id: 2,
-    title: "Natural Elegance 🌸",
-    subtitle: "Effortless poise and gentle charm",
-    description: "Like a gentle spring breeze, you carry an effortless and timeless elegance that is quiet, graceful, and completely your own.",
+    title: "Tabiiy nafislik 🌸",
+    subtitle: "Zo‘rma-zo‘raki vazminlik va mayin jozibasi",
+    description: "Bahorning mayin shabadasidek, siz beg‘ubor, sokin va o‘ziga xos abadiy nafislikka egasiz.",
     img: hairImg,
-    badge: "Timeless Poise",
+    badge: "Abadiy vazminlik",
   },
   {
     id: 3,
-    title: "A Radiant Smile 🕊️",
-    subtitle: "A gentle light that brightens the day",
-    description: "Your smile is warm, authentic, and naturally comforting. It has a rare gift of uplifting the atmosphere with genuine sincerity.",
+    title: "Yorqin tabassum 🕊️",
+    subtitle: "Kunni yoritadigan mayin nur",
+    description: "Tabassumingiz iliq, samimiy va tabiiy taskin beradi. U chin samimiyat bilan muhitni ko‘tarish noyob in’omiga ega.",
     img: lipsImg,
-    badge: "Warmth & Light",
+    badge: "Iliqlik va nur",
   },
   {
     id: 4,
-    title: "Quiet Dignity 🌷",
-    subtitle: "True grace rooted in kindness",
-    description: "Beyond outward elegance lies a kind and noble heart. That inner goodness and dignified spirit are what make you truly special.",
+    title: "Sokin viqor 🌷",
+    subtitle: "Mehribonlikka asoslangan haqiqiy nafislik",
+    description: "Tashqi go‘zallikdan tashqarida mehribon va olijanob yurak bor. Aynan shu ichki ezgulik va viqorli ruh sizni haqiqatan ham noyob qiladi.",
     img: neckImg,
-    badge: "Dignified Spirit",
+    badge: "Viqorli ruh",
   },
 ];
 
@@ -52,9 +52,9 @@ const PhotoGallery = () => {
           <span>✨</span>
           <span>🕊️</span>
         </div>
-        <h3 className="gallery-title">Moments of Grace & Elegance, Soliha</h3>
+        <h3 className="gallery-title">Nafislik va go‘zallik lahzalari, Soliha</h3>
         <p className="gallery-subtitle">
-          A quiet tribute to the kindness, beauty, and serene light you bring into the world
+          Atrofingizga olib kirayotgan mehribonlik, go‘zallik va sokin nurga xotirjam ehtirom
         </p>
       </div>
 
@@ -85,7 +85,7 @@ const PhotoGallery = () => {
           onClick={() => setShowVideo(!showVideo)}
           className="romantic-video-btn"
         >
-          {showVideo ? '🎥 Hide Video' : '🎬 View A Gentle Moment'}
+          {showVideo ? '🎥 Videoni yashirish' : '🎬 Mayin lahzani ko‘rish'}
         </button>
 
         {showVideo && (
@@ -99,9 +99,10 @@ const PhotoGallery = () => {
               autoPlay
               playsInline
               muted
+              preload="metadata"
               className="romantic-video"
             />
-            <p className="video-caption">✨ A quiet and cherished moment of peace... 🌸</p>
+            <p className="video-caption">✨ Tinchlik va aziz lahzalar... 🌸</p>
           </div>
         )}
       </div>
@@ -113,7 +114,7 @@ const PhotoGallery = () => {
             <button
               className="modal-close-btn"
               onClick={() => setSelectedPhoto(null)}
-              aria-label="Close"
+              aria-label="Yopish"
             >
               ✕
             </button>

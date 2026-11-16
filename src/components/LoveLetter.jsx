@@ -25,10 +25,10 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
       {!isOpen && (
         <div className="closed-envelope-section">
           <div className="envelope-invitation">
-            <span className="sparkle-tag">✨ A Gentle Note For Soliha ✨</span>
-            <h1 className="envelope-main-title">A Special Letter</h1>
+            <span className="sparkle-tag">✨ Soliha uchun mehribon xat ✨</span>
+            <h1 className="envelope-main-title">Maxsus xat</h1>
             <p className="envelope-sub-text">
-              A few sincere words of heartfelt appreciation and quiet respect...
+              Samimiy minnatdorchilik va sokin hurmat bilan bir necha so‘z...
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
             onClick={handleOpen}
             role="button"
             tabIndex={0}
-            aria-label="Open letter"
+            aria-label="Xatni ochish"
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') handleOpen();
             }}
@@ -71,20 +71,20 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
               {/* Stamp on corner */}
               <div className="envelope-stamp">
                 <span>🕊️</span>
-                <small>GRACE</small>
+                <small>NOZIK</small>
               </div>
 
               {/* Front Label */}
               <div className="envelope-label">
-                <p className="label-to">To: <span>Soliha 🌸</span></p>
-                <p className="label-from">From: <span>Someone Who Truly Loves You 🕊️</span></p>
+                <p className="label-to">Kimga: <span>Soliha 🌸</span></p>
+                <p className="label-from">Kimdan: <span>Sizni chindan sevadigan biri 🕊️</span></p>
               </div>
             </div>
 
             {/* Glowing button below envelope */}
             <button className="open-letter-btn">
               <span className="btn-icon">💌</span>
-              <span>Read Letter</span>
+              <span>Xatni o‘qish</span>
               <span className="btn-icon">🌸</span>
             </button>
           </div>
@@ -110,49 +110,50 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
                   <span className="crown-heart">✨</span>
                   <span>🌸</span>
                 </div>
-                <h2 className="letter-salutation">Dear Soliha,</h2>
+                <h2 className="letter-salutation">Hurmatli Soliha,</h2>
                 <div className="letter-date">
-                  <span>With Warmth & Sincere Respect</span>
+                  <span>Iliq salom va samimiy hurmat bilan</span>
                 </div>
                 <div className="letter-gold-divider"></div>
               </div>
 
-              {/* Letter Body - Elegant, Gentle, Respectful Words */}
+              {/* Letter Body */}
               <div className="letter-body">
                 <p className="letter-paragraph highlight-lead">
-                  I wanted to take a quiet moment to share these thoughts with you. There are rare people
-                  in this world whose quiet grace, gentle kindness, and presence effortlessly bring a sense of
-                  calm and light to everyone around them — and you are truly one of them.
+                  Bu sokin lahzada sizga o‘ylarimni ulashmoqchi edim. Dunyoda shunday noyob insonlar borki,
+                  ularning sokin mehribonligi, nozik xulq-atvori va borliqlari atrofdagilarga osoyishtalik va
+                  yorug‘lik bag‘ishlaydi — siz ham ulardan birisiz.
                 </p>
 
                 <p className="letter-paragraph">
-                  Whenever I see your genuine smile or notice the effortless poise you carry, it brings
-                  a peaceful brightness to the day. Your thoughtful spirit, your gentle manner, and the
-                  sincerity in your eyes are qualities that inspire the deepest appreciation and utmost respect.
+                  Sizning chin tabassumingizni ko‘rganimda yoki tashqi ko‘rinishingizdagi zo‘rma-zo‘raki vazminlikni
+                  sezganimda, kunimga tinch bir yorug‘lik ulashiladi. Sizning o‘ylanganligingiz, mayin muomalangiz va
+                  ko‘zlaringizdagi samimiyat eng chuqur tahsin va eng oliy hurmatga loyiq fazilatlardir.
                 </p>
 
                 <div className="letter-quote-box">
                   <span className="quote-heart">❝</span>
                   <p className="quote-text">
-                    "Some souls illuminate the world not by demanding attention, but simply through their quiet kindness, grace, and inner light."
+                    "Ba’zi insonlar dunyoni e’tibor talab qilish bilan emas, balki sokin mehribonligi, nafisligi
+                    va ichki nuri bilan yoritadi."
                   </p>
                   <span className="quote-heart right">❞</span>
                 </div>
 
                 <p className="letter-paragraph">
-                  I hold no expectations, nor do I wish to place any burden upon your heart. My only
-                  wish in writing this is simply to honor the wonderful person that you are. Seeing you
-                  happy, peaceful, and flourishing in life is a genuine joy.
+                  Men hech qanday umid bog‘lamayman va yuragingizga biror yuk qo‘ymoqchi emasman. Bu xatni yozishdan
+                  maqsadim faqat siz kabi ajoyib insonni hurmat qilishdir. Sizni baxtli, tinch va gullab-yashnagan
+                  holda ko‘rish men uchun chin quvonchdir.
                 </p>
 
                 <p className="letter-paragraph">
-                  May your path always be surrounded by clarity, warmth, and peace. Keep sharing your gentle
-                  smile with the world, because your presence is a blessing that touches more lives than you
-                  may ever know.
+                  Yo‘lingiz doimo aniqlik, iliqlik va tinchlik bilan o‘ralgan bo‘lsin. Mayin tabassumingizni dunyo bilan
+                  ulashishda davom eting, chunki sizning borligingiz ko‘plab hayotlarga shunday ne’mat bag‘ishlaydiki,
+                  balki buni o‘zingiz ham hech qachon to‘liq bilmassiz.
                 </p>
 
                 <p className="letter-paragraph signature-closing">
-                  Wishing you endless peace, joy, and happiness in everything you do, Soliha. 🌸
+                  Sizga tinchlik, quvonch va baxt tilayman, Soliha. 🌸
                 </p>
               </div>
 
@@ -160,11 +161,11 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
               <div className="letter-footer">
                 <div className="stamp-seal-circle">
                   <span>🕊️</span>
-                  <small>SINCERE REGARDS</small>
+                  <small>SAMIMIY HURMAT</small>
                 </div>
                 <div className="signature-area">
-                  <p className="sig-words">With warm thoughts and genuine respect,</p>
-                  <p className="sig-name">From Someone Who Deeply Loves You ✍️🌸</p>
+                  <p className="sig-words">Iliq fikrlar va chin hurmat bilan,</p>
+                  <p className="sig-name">Sizni chuqur sevadigan biridan ✍️🌸</p>
                 </div>
               </div>
 
@@ -175,7 +176,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
                   onClick={() => setShowGallery(!showGallery)}
                 >
                   <span className="btn-emoji">📸</span>
-                  <span>{showGallery ? "Hide Moments" : "Moments of Grace & Elegance"}</span>
+                  <span>{showGallery ? "Lahzalarni yashirish" : "Nafislik va go‘zallik lahzalari"}</span>
                 </button>
 
                 <button
@@ -183,7 +184,7 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
                   onClick={handleClose}
                 >
                   <span className="btn-emoji">✉️</span>
-                  <span>Close Letter</span>
+                  <span>Xatni yopish</span>
                 </button>
               </div>
             </div>
@@ -202,4 +203,3 @@ const LoveLetter = ({ onOpenLetter, triggerHeartBurst }) => {
 };
 
 export default LoveLetter;
-

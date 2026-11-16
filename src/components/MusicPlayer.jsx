@@ -42,13 +42,13 @@ const MusicPlayer = ({ shouldPlay, onToggle }) => {
         ref={audioRef}
         src={musicFile}
         loop
-        preload="auto"
+        preload="none"
       />
       <button
         onClick={togglePlay}
         className={`music-toggle-btn ${isPlaying ? 'playing' : ''}`}
-        title={isPlaying ? 'Pause Music' : 'Play Music'}
-        aria-label="Music player control"
+        title={isPlaying ? 'Pauza' : 'Musiqani ijro etish'}
+        aria-label="Musiqa boshqaruvi"
       >
         <span className="music-icon">
           {isPlaying ? (
@@ -63,7 +63,7 @@ const MusicPlayer = ({ shouldPlay, onToggle }) => {
           )}
         </span>
         <span className="music-text">
-          {isPlaying ? 'Kel yashaylik 🎶' : 'Play Music 🎵'}
+          {isPlaying ? 'Kel yashaylik 🎶' : 'Musiqani yoqish 🎵'}
         </span>
       </button>
     </div>
@@ -71,4 +71,3 @@ const MusicPlayer = ({ shouldPlay, onToggle }) => {
 };
 
 export default MusicPlayer;
-

@@ -40,7 +40,7 @@ function App() {
       {/* Floating interactive watermark / footer */}
       <footer className="romantic-footer">
         <p>
-          Crafted with sincere love and respect <span>🌸</span>
+          Chin ko‘ngildan va hurmat bilan yaratildi <span>🌸</span>
         </p>
       </footer>
     </div>

@@ -1374,3 +1374,85 @@
   }
 }
 
+
+/* ========================================================
+   Telefon uchun tuzatishlar (media: rasm, video, lightbox)
+   ======================================================== */
+
+/* Mobil brauzerlarda manzil paneli hisobga olinsin */
+.romantic-app-root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Rasmlar kesilib ketmasligi uchun (portret suratlar) */
+.polaroid-img-wrapper {
+  aspect-ratio: 3 / 4;
+}
+.polaroid-img {
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+/* Lightbox: rasm to'liq ko'rinadi, ekrandan chiqib ketmaydi */
+.modal-content {
+  max-height: 92vh;
+  max-height: 92dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.modal-image-container {
+  max-height: none;
+  background: #0d0609;
+}
+.modal-full-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  max-height: 70dvh;
+  object-fit: contain;
+}
+
+/* Video: portret (telefon) formatida to'liq ko'rinadi */
+.video-wrapper {
+  max-width: 100%;
+}
+.romantic-video {
+  width: 100%;
+  height: auto;
+  max-height: 72vh;
+  max-height: 72dvh;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .romantic-app-root {
+    padding: 56px 12px 28px;
+  }
+
+  /* Galereya: bitta ustun, kattaroq ko'rinish */
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .polaroid-card {
+    max-width: 100%;
+  }
+
+  .photo-gallery-section {
+    padding: 24px 14px;
+  }
+
+  /* Blur og'ir bo'lgani uchun telefonda o'chiramiz */
+  .ambient-radial-glow {
+    filter: none;
+  }
+
+  .romantic-video-btn {
+    max-width: 100%;
+  }
+
+  .modal-backdrop {
+    padding: 12px;
+  }
+}
