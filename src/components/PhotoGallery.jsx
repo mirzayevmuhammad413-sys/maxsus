@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import eyesImg from '../assets/img1.jpg';
-import hairImg from '../assets/img2.jpg';
+import eyesImg from '../assets/img2.jpg';
+import hairImg from '../assets/img1.jpg';
 import lipsImg from '../assets/img3.jpg';
-import neckImg from '../assets/img4.jpg';
+import neckImg from '../assets/img4.png';
 import loveVideo from '../video/mmm.mp4';
 
 const photoItems = [
